@@ -1,0 +1,103 @@
+*{
+    padding : 0;
+    margin : 0;
+}
+body
+{
+    background-color: #00626B;
+    height:100%;
+    width:100%;
+}
+#title
+{
+    text-align: center;
+}
+#todo-container
+{
+    background-color: #47E0EE;
+    margin:10px 25vw;
+    padding:10px 25px;
+    align-items: center;
+    border:5px solid #00D9EB;
+}
+input
+{
+    margin: 0px 2px;
+}
+#input-container
+{
+    padding:15px 20px;
+    margin: 0px 25px;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#inputType
+{
+    border: 1px solid;
+    border-radius: 5px;
+    width:65%;
+    font-size:15px;
+}
+@media screen and (max-width:700px){
+    #input-container
+    {
+        display: flex;
+        padding:15px 0px;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+#submit
+{
+    
+    border:2px solid;
+    border-radius: 20px;
+    width:75px;
+    cursor: pointer;
+}
+#submit:hover
+{
+    background-color:lightskyblue;
+    transition-duration: 0.75s;
+}
+#item-container
+{
+    display:flex;
+    justify-content: center;
+}
+li
+{
+    list-style: none;
+    margin : 10px 0;
+    border:solid;
+    width:150px;
+    text-align: center;
+    border-radius: 75px 30px;
+    background-color:#38AFBA;
+    font-size : 15px;
+}
+
+li:nth-child(odd)
+{
+    background-color:#08848f;
+    color:white;
+}
+
+li:hover:nth-child(odd)
+{
+    transform:rotate(-5deg);
+}
+
+li:hover
+{
+    cursor: pointer;
+    background-color:lightseagreen;
+    transition-duration: 0.75s;
+    transform:rotate(5deg);
+}
+.checked
+{
+    text-decoration: line-through;
+}
